@@ -1,0 +1,28 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"prettier"
+	],
+	"plugins": ["prettier"],
+	"parserOptions": {
+		"ecmaVersion": 8,
+		"sourceType": "script"
+	},
+	"env": {
+		"es6": false,
+		"node": true,
+		"mocha": true
+	},
+	"rules": {
+		"arrow-body-style": "warn",
+		"prettier/prettier": [
+			"error",
+			{
+				"trailingComma": "es5",
+				"singleQuote": true,
+				"printWidth": 100,
+				"tabWidth": 2
+			}
+		]
+	}
+}

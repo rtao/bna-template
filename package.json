@@ -1,0 +1,27 @@
+{
+  "name": "bna-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "npm run buildpackage",
+    "buildpackage": "./node_modules/.bin/mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/bna-template.bna",
+    "test": "mocha -t 0 --recursive"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "composer-admin": "^0.20.5",
+    "composer-client": "^0.20.5",
+    "composer-common": "^0.20.5",
+    "composer-connector-embedded": "^0.20.5",
+    "eslint": "^5.10.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "mkdirp": "^0.5.1",
+    "mocha": "^5.2.0",
+    "moment": "^2.23.0",
+    "prettier": "^1.15.3",
+    "sinon": "^7.2.2"
+  }
+}
